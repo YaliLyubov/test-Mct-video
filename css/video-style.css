@@ -1,0 +1,39 @@
+body {
+  background-color: black;
+  color: #fff;
+}
+.video-grid {
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 230px);
+}
+.text-block {
+  font-size: 50px;
+  font-weight: 700;
+}
+.video-clip:nth-child(1) {
+  grid-column: 1 / 2;
+}
+.video-clip:nth-child(2) {
+  grid-column: 2 /3;
+}
+.video-clip:nth-child(3) {
+  grid-column: 2 / 3;
+}
+.video-clip:nth-child(4) {
+  grid-column: 2 / 3;
+}
+.video-clip video {
+  width: 100%;
+  object-fit: cover;
+}
+.text-block:nth-child(4),
+.text-block:nth-child(6),
+.text-block:nth-child(7),
+.text-block:nth-child(9) {
+  align-self: center;
+}
+.text-block:nth-child(10) {
+  align-self: end;
+}
